@@ -8802,19 +8802,20 @@ button.close {
 .navbar {
   border: none;
   background: transparent;
+  margin-top: 20px;
 }
-/* line 22, ../sass/styles.scss */
+/* line 23, ../sass/styles.scss */
 .navbar a {
   color: #fff;
 }
 
-/* line 26, ../sass/styles.scss */
+/* line 27, ../sass/styles.scss */
 .icon-bar {
   color: #fff;
   background: #fff;
 }
 
-/* line 30, ../sass/styles.scss */
+/* line 31, ../sass/styles.scss */
 .jumbotron {
   background: url("../img/landing-bg.jpg");
   background-position: center;
@@ -8823,13 +8824,13 @@ button.close {
   height: 100vh;
   border-radius: 0px;
 }
-/* line 38, ../sass/styles.scss */
+/* line 39, ../sass/styles.scss */
 .jumbotron p {
   font-size: 1.1em;
   font-weight: bold;
 }
 
-/* line 45, ../sass/styles.scss */
+/* line 46, ../sass/styles.scss */
 .button-box {
   display: flex;
   width: 80%;
@@ -8837,43 +8838,43 @@ button.close {
   justify-content: space-around;
   padding-top: 15px;
 }
-/* line 52, ../sass/styles.scss */
+/* line 53, ../sass/styles.scss */
 .button-box a {
   margin: 5px;
-  padding: 20px 45px;
+  padding: 20px 50px;
   border-radius: 50px;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
   color: #fff;
 }
-/* line 62, ../sass/styles.scss */
+/* line 63, ../sass/styles.scss */
 .button-box .btn {
   background: none;
   border: solid 1px #fff;
 }
-/* line 66, ../sass/styles.scss */
+/* line 67, ../sass/styles.scss */
 .button-box .btn:hover {
   color: #fff;
   background: rgba(0, 0, 0, 0.2);
 }
-/* line 70, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
 .button-box .btn:visited {
   color: #fff;
 }
-/* line 73, ../sass/styles.scss */
+/* line 74, ../sass/styles.scss */
 .button-box .btn:nth-of-type(2) {
   border: none;
   background: rgba(0, 0, 0, 0.7);
   border: 1px solid transparent;
 }
-/* line 77, ../sass/styles.scss */
+/* line 78, ../sass/styles.scss */
 .button-box .btn:nth-of-type(2):hover {
   color: #fff;
   border: 1px solid #fff;
 }
 
-/* line 86, ../sass/styles.scss */
+/* line 87, ../sass/styles.scss */
 .vertical-center {
   min-height: 100%;
   /* Fallback for browsers do NOT support vh unit */
