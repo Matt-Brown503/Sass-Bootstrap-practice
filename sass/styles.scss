@@ -1,0 +1,138 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+body {
+	font-family: 'Roboto', sans-serif !important;	
+}
+
+
+
+.container-fluid {
+	padding: 0;
+}
+
+.bigbooty {
+	display: none; 
+}
+
+.navbar {
+	border: none;
+	background: rgba(0,0,0, 0);
+	margin-top: 20px;
+	
+	a {
+		color: #fff;
+	}
+
+	.btn {
+		border: solid 1px #fff;
+		border-radius: 50px;
+		padding: 5px 20px;
+		margin-top: 10px;
+	}
+}
+.icon-bar {
+	color: #fff;
+	background: #fff;
+}
+.jumbotron {
+	background: url('../img/landing-bg.jpg');
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	max-height: 80vh;
+	border-radius: 0px;
+	min-height: 95%;  /* Fallback for browsers do NOT support vh unit */
+  	min-height: 95vh; /* These two lines are counted as one :-)       */
+	p{
+		font-size: 1.1em;
+		font-weight: bold;
+	}
+
+}
+
+.button-box {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	justify-content: space-around;
+	padding-top: 15px;
+
+	a {
+		margin: 5px;
+		padding: 20px 50px;
+		border-radius: 50px;
+		text-transform: uppercase;
+		font-size: 12px;
+		font-weight: bold;
+		color: #fff;
+		
+	}
+	.btn {
+		background: none;
+		border: solid 1px #fff;
+
+		&:hover {
+			color: #fff;
+			background: rgba(0,0,0, .2);
+		}
+		&:visited {
+			color: #fff;
+		}
+		&:nth-of-type(2) {
+			border: none;
+			background: rgba(0,0,0, .7);
+			border: 1px solid rgba(0,0,0, 0);
+			padding: 20px 40px;
+			&:hover {
+				color: #fff;
+				border: 1px solid #fff;
+			}
+		}
+	}
+
+}
+
+.vertical-center {
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.glyphicon .glyphicon-triangle-bottom {
+	padding-top: 150px;
+}
+.about-contain {
+	min-height: 95vh;
+	.col-md-4 {
+		margin-bottom: 20px;
+	}
+	p {
+		color: #888;
+		font-weight: bold;
+		line-height: 2;
+	}
+	.row {
+		border-bottom: 1px solid #C9C9C9;
+	}
+}
+@media (min-width: 600px) {
+	.about-contain {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.col-sm-4 {
+		margin: 30px 0px;
+		padding: 5px;
+	}
+	}
+
+}
