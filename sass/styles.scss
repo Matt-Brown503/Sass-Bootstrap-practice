@@ -8,7 +8,11 @@
 @import "bootstrap";
 
 body {
-	font-family: 'Roboto', sans-serif !important;	
+	font-family: 'Roboto', sans-serif !important;
+	p {
+		font-weight: bold;
+		line-height: 2;
+	}	
 }
 
 .container {
@@ -176,6 +180,89 @@ body {
 	}
 	
 }
+
+.portfolio {
+	height: 700px;
+	h1 {
+		text-transform: uppercase;
+	}
+	.btn {
+		background: none;
+		border: solid 1px rgba(0,0,0,.3);
+		border-radius: 50px;
+		padding: 20px 50px;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: bold;
+
+		&:hover {
+			color: #000;
+			background: rgba(0,0,0, .2);
+		}
+		&:visited {
+			color: #000;
+		}
+		&:nth-of-type(2) {
+			border: none;
+			background: rgba(0,0,0, .7);
+			border: 1px solid rgba(0,0,0, 0);
+			padding: 20px 40px;
+			&:hover {
+				color: #000;
+				border: 1px solid #000;
+			}
+		}
+	}
+}
+
+.fit {
+	width: 100%;
+}
+.details {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	.controls {
+		margin-top: 20px;
+		font-size: 25px;
+
+		a {
+			color: #333;	
+		}
+	}
+}
+.flex {
+	display: flex;
+}
+.brand-letter-outter {
+	border: solid 1px rgba(0,0,0, .2);
+	border-radius: 25px;
+	display: inline-block;
+	padding: 25px;
+}
+.brand-letter {
+	border: solid 1px #222;
+	display: inline-block;
+	padding: 10px;
+
+	h1 {
+		line-height: 0;
+		padding: 0;
+	}
+
+}
+.web-img {
+	background-image: url("../img/websites.jpg");
+	height: 200px;
+	background-position: center;
+	background-size: cover;
+}
+
+.projects-bar {
+	display: none;
+}
 @media (min-width: 600px) {
 	.about-contain {
 	display: flex;
@@ -189,4 +276,19 @@ body {
 		text-align: left;
 	}
 
+	.details {
+		text-align: left;
+	}
+	.web-img {
+	height: 500px;
+	}
+
+	.projects-bar {
+		display: block;
+		background-color: #444;
+		li {
+			display: inline-block;
+			padding: 10px;
+		}
+	}
 }
