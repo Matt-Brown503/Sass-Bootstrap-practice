@@ -22,10 +22,6 @@ body {
 	padding: 0;
 }
 
-.bigbooty {
-	display: none; 
-}
-
 .navbar {
 	border: none;
 	background: rgba(0,0,0, 0);
@@ -389,7 +385,6 @@ body {
 }
 .mobile-links {
 	margin: 0px;
-	background-color: #D7D7D7;
 	padding: 0px;
 	display: flex;
 	justify-content: space-around;
@@ -400,14 +395,38 @@ body {
 	li {
 		display: flex;
 		flex-grow: 1;
-		border: 1px solid #fff;
+		border-top: 1px solid rgba(0,0,0, .2);
+		border-bottom: 1px solid rgba(0,0,0, .2);
+		border-right: 1px solid rgba(0,0,0, .2);
 
 	}
 
 	a {
-		padding: 20px;
+		padding: 30px;
 		text-align: center;
 		flex-grow: 1;
+	}
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	height: 60vh;
+	ul {
+		list-style: none;
+		padding: 0px;
+	}
+	h4 {
+		font-weight: bold;
+	}
+	p, a {
+		color: #999;
+		font-weight: bold;
+		line-height: 2;
+	}
+
+	a {
+		text-decoration: none;
 	}
 }
 
