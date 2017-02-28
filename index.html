@@ -13,7 +13,7 @@
 
 <div class="container-fluid page-wrapper">
 	<div class="container">
-		<nav class="navbar navbar-fixed-top">
+		<nav class="navbar navbar-fixed-top" id="nav">
 		  <div class="container">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -23,18 +23,17 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#"><img src="img/svg/radio-checked.svg" alt="circle"></a>
+		      <a class="navbar-brand" href="#home">Stellar</a>
 		    </div>
-
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
-		        <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><span class="sr-only">(current)</span></a></li>
-		        <li><a href="#">About</a></li>
-		        <li><a href="#">Team</a></li>
-		        <li><a href="#">Portfolio</a></li>
-		        <li><a href="#">Careers</a></li>
-		        <li><a href="#">Blog</a></li>
+		        <li class="active"><a href="#home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><span class="sr-only">(current)</span></a></li>
+		        <li><a href="#about">About</a></li>
+		        <li><a href="#team">Team</a></li>
+		        <li><a href="#portfolio">Portfolio</a></li>
+		        <li><a href="#careers">Careers</a></li>
+		        
 		        <li><a class="btn btn-md" href="#" role="button">Buy Now</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
@@ -42,7 +41,7 @@
 		</nav>		
 	</div>
 		<!--End Navbar -->
-	<div class="jumbotron vertical-center text-center">
+	<div class="jumbotron vertical-center text-center" id="home">
 		<div class="container">
 			<h1>This is Stellar.</h1>
 			<p>Responsive. Retina Ready. Sketch Support.</p>
@@ -50,11 +49,10 @@
 				<p><a class="btn btn-lg" href="#" role="button">Learn more</a><a class="btn btn-lg" href="#" role="button"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> Watch Video</a></p>
 			</div>
 		</div>
-		<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
 	</div>
 	<!--End Landing Page -->
 
-	<div class="container text-center about-contain">
+	<div class="container text-center about-contain" id="about">
 	<div class="container-fluid about-section">
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4">
@@ -99,7 +97,7 @@
 		</div>
 	</div>
 	<!-- End About -->
-	<div class="container-fluid team">
+	<div class="container-fluid team" id="team">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 
 
@@ -176,7 +174,7 @@
 	<!-- End Carousel -->
 	</div>
 	<!-- End Team -->
-	<div class="container-fluid portfolio">
+	<div class="container-fluid portfolio" id="portfolio">
 		<div class="row-fluid">
 			<div class="col-md-4 col-md-offset-4 text-center">
 				<h1>Portfolio</h1>
@@ -381,7 +379,7 @@
 			</div> -->
 	</div>
 	<!-- End portfolio -->
-	<div class="container-fluid careers">
+	<div class="container-fluid careers" id="careers">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
@@ -406,30 +404,29 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid social">
+	<div class="container-fluid social" id="social">
 			<div class="row-fluid">
 				<ul class="mobile-links">
-				<li><a href="#"><img src="img/svg/facebook.svg"></a></li>
-				<li><a href="#"><img src="img/svg/twitter.svg"></a></li>
-				<li><a href="#"><img src="img/svg/google.svg"></a></li>
-				<li><a href="#"><img src="img/svg/instagram.svg"></a></li>
-				<li><a href="#"><img src="img/svg/pinterest.svg"></a></li>
+				<li><a href="https://www.facebook.com/"><img src="img/svg/facebook.svg"></a></li>
+				<li><a href="https://twitter.com/"><img src="img/svg/twitter.svg"></a></li>
+				<li><a href="https://plus.google.com/"><img src="img/svg/google.svg"></a></li>
+				<li><a href="https://www.instagram.com/"><img src="img/svg/instagram.svg"></a></li>
+				<li><a href="https://www.pinterest.com/"><img src="img/svg/pinterest.svg"></a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="footer">
 			<div class="container">
 				<div class="col-sm-2">
-					<h3><img src="img/svg/radio-checked.svg" alt="circle"></h3>
+					<h3>Stellar</h3>
 				</div>
 				<div class="col-sm-2">
 					<h4>Company</h4>
 					<ul>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Team</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Careers</a></li>
-						<li><a href="#">Blog</a></li>
+						<li><a href="#about">About</a></li>
+				        <li><a href="#team">Team</a></li>
+				        <li><a href="#portfolio">Portfolio</a></li>
+				        <li><a href="#careers">Careers</a></li>
 					</ul>
 				</div>
 				<div class="col-sm-4">
@@ -446,7 +443,7 @@
 					<p>Subscribe to our newsletter and stay updated with the latest news.</p>
 					<div class="input-group">
      				 <span class="input-group-btn">
-      					<input type="text" class="form-control" placeholder="Email Address">
+      					<input type="text" class="form-control" placeholder="Email Address" required>
         				<button class="btn btn-default" type="button">Send</button>
       				</span>
     			</div>
