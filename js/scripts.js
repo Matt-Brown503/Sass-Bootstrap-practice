@@ -17,7 +17,7 @@ $(window).scroll(function (event) {
 //trigger the scroll
 $(window).scroll();
 
-//Scroll to section
+//Scroll to section for nav
 $("nav").find("a").click(function(e) {
     e.preventDefault();
     var section = $(this).attr("href");
@@ -25,7 +25,15 @@ $("nav").find("a").click(function(e) {
         scrollTop: $(section).offset().top - 35
     });
 });
+$("#about-btn").click(function(e) {
+    e.preventDefault();
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top - 35
+    });
+});
 
+//Empty Links will not reload page
 $(emptyLink).click(function(e) {
     e.preventDefault();
 

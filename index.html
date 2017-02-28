@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
 
-	<title>Sass Practice</title>
+	<title>Stellar</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -46,11 +46,24 @@
 			<h1>This is Stellar.</h1>
 			<p>Responsive. Retina Ready. Sketch Support.</p>
 			<div class="button-box">
-				<p><a class="btn btn-lg" href="#" role="button">Learn more</a><a class="btn btn-lg" href="#" role="button"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> Watch Video</a></p>
+				<p><a class="btn btn-lg" href="#about" id="about-btn" role="button">Learn more</a><a class="btn btn-lg" data-toggle="modal" data-target="#exampleModal" role="button"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> Watch Video</a></p>
 			</div>
 		</div>
 	</div>
+
+
 	<!--End Landing Page -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content videoModal">
+      <div class="modal-body">
+        <iframe autoplay width="100%" height="315" src="https://www.youtube.com/embed/5dGzfrVqlxA" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
 
 	<div class="container text-center about-contain" id="about">
 	<div class="container-fluid about-section">
@@ -132,26 +145,6 @@
  							</div>
  							<div class="description">
  								<p>Jeff is a very skilled designer. She used to work for Yahoo, Facebook and Apple. She puts passion in to every project and creates amazing interfaces.</p>
- 								<a href="#"><img src="img/svg/dribbble.svg"></a>
- 								<a href="#"><img src="img/svg/twitter.svg"></a>
- 								<a href="#"><img src="img/svg/linkedin.svg"></a>
- 							</div>
- 						</div>
- 					</div>
- 				</div>
- 			</div>
-
- 			<div class="item">
- 				<div class="container">
- 					<div class="row">
- 						<div class="col-md-6">
- 							<div class="staff-member">
-	 							<img src="img/photo-1.png">
-	 							<h1>Abbie Morey</h1>
-	 							<p>Product Designer</p>
- 							</div>
- 							<div class="description">
- 								<p>Abbie is a very skilled designer. She used to work for Yahoo, Facebook and Apple. She puts passion in to every project and creates amazing interfaces.</p>
  								<a href="#"><img src="img/svg/dribbble.svg"></a>
  								<a href="#"><img src="img/svg/twitter.svg"></a>
  								<a href="#"><img src="img/svg/linkedin.svg"></a>
